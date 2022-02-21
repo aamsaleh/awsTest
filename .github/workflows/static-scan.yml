@@ -18,4 +18,4 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - run: ls -l
-      - run: docker run -it --rm veracode/pipeline-scan:cmd --file /myapp/myapp.jar
+      - run: docker run -it --rm veracode/pipeline-scan:cmd --file scriptedsql-connector-1.5.20.3.jar
