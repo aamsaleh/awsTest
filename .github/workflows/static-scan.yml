@@ -1,0 +1,12 @@
+name: GitHub Actions
+on: [push]
+jobs:
+  Explore-GitHub-Actions:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "executing automation script"
+      - run: echo "checking network connectivity"
+      - run: curl https://gorest.co.in/public/v2/users
+      - run: echo "The name of your branch is ${{ github.ref }}"
+      - name: Check out repository code
+        uses: actions/checkout@v2
